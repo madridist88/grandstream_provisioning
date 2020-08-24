@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Grandstream XML Provisioning Configuration -->
+<gs_provision version="1">
+  <config version="1">
+<!-- ?################################################################################################ -->
+
+<!-- ## Configuration Template For GXP1610/1620/1625/1628/1630 Firmware Version 1.0.4.57           ## -->
+
+<!-- ################################################################################################ -->
+<!-- ########################################## -->
+
+<!-- # Account 1/SIP Settings/Basic Settings -->
+
+<!-- ########################################## -->
+<!-- # DTMF Inaudio -->
+<P2301>0</P2301>
+<P2401>0</P2401>
+
+<!-- # DTMF RFC 2833 value 1 -->
+<P2302>1</P2302>
+<P2402>1</P2402>
+
+<!-- # DTMF SIP INFO -->
+<P2303>0</P2303>
+<P2403>0</P2403>
+
+
+
+<!-- # Hide System Softkey on Idle Page -->
+<P8348>ForwardAll,Forward</P8348>
+
+<!-- # HEADERs off line 1 -->
+<P2338>1</P2338>
+<P2339>1</P2339>
+<P26058>0</P26058>
+<P26059>0</P26059>
+<!-- # HEADERs off line 2-->
+<P2438>1</P2438>
+<P2439>1</P2439>
+<P26158>0</P26158>
+<P26159>0</P26159>
+
+<!-- # Bypass Dial Plan Through Call History and Directories -->
+<P6758>1</P6758> 
+
+
+<!-- # Display Language. Default is auto -->
+<!-- # ru - Russian  ru - Russian   auto -->
+<!-- # Mandatory -->
+<P1362>ru</P1362> 
+
+
+<!-- # Register Expiration (in minutes). Default is 60. Max about 45 days -->
+
+<!-- # Number: 1 - 64800 -->
+
+<!-- # Mandatory -->
+
+<P32>5</P32> 
+
+<!-- # Disable Direct IP Call -->
+
+<!-- # Zashita ot spam -->
+
+<P1310>1</P1310> 
+
+
+<!-- # Enable OPTIONS Keep Alive -->
+
+<!-- # Number: 0, 1 -->
+
+<!-- # Mandatory -->
+
+<P2397>1</P2397>
+
+
+
+<!-- # OPTIONS Keep Alive Interval (in seconds). Default is 30 seconds -->
+
+<!-- # Number -->
+
+<!-- # Mandatory -->
+
+<P2398>15</P2398>
+
+
+<!-- # Local SIP Port. Default is 5060 -->
+
+<!-- # Number -->
+
+<!-- # Mandatory -->
+
+<P40>16201</P40> 
+
+
+
+<!-- # SIP Registration Failure Retry Wait Time (in seconds). Default is 20 -->
+
+<!-- # Number: 1 - 3600 -->
+
+<!-- # Mandatory -->
+
+<P138>10</P138>
+
+
+<!-- ########################################## -->
+
+<!-- # Account 1/Audio Settings -->
+
+<!-- ########################################## -->
+
+
+
+<!-- # DTMF Payload Type. Default is 101 -->
+
+<!-- # Number: 96 - 127 -->
+
+<!-- # Mandatory -->
+
+<P79>96</P79>
+
+
+
+<!-- # Preferred Vocoder -->
+
+<!-- # 0 - PCMU, 2 - G.726-32, 4 - G.723.1, 8 - PCMA, 9 - G.722, 18 - G.729A/B, 98 - iLBC -->
+
+<!-- # choice 1. Default is 0 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P57>8</P57>
+
+
+
+<!-- # choice 2. Default is 8 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P58>8</P58>
+
+
+
+<!-- # choice 3. Default is 18 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P59>8</P59>
+
+
+
+<!-- # choice 4. Default is 9 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P60>8</P60>
+
+
+
+<!-- # choice 5. Default is 2 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P61>8</P61>
+
+
+
+<!-- # choice 6. Default is 2 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P62>8</P62> 
+
+
+<!-- # choice 7. Default is 2 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P46>18</P46>
+
+
+<!-- # Voice Frames per TX (up to 10/20/32/64 frames for G711/G726/G723/other codecs respectively). Default is 2 -->
+
+<!-- # Number: 1 - 64 -->
+
+<!-- # Mandatory -->
+
+<P37>2</P37>
+
+
+
+<!-- ########################################## -->
+
+<!-- # Account 2/SIP Settings/Basic Settings -->
+
+<!-- ########################################## -->
+
+
+<!-- # Register Expiration (in minutes). Default is 60. Max about 45 days -->
+
+<!-- # Number: 1 - 64800 -->
+
+<!-- # Mandatory -->
+
+<P412>5</P412>
+
+
+<!-- # Enable OPTIONS Keep Alive -->
+
+<!-- # Number: 0, 1 -->
+
+<!-- # Mandatory -->
+
+<P2497>1</P2497>
+
+
+
+<!-- # OPTIONS Keep Alive Interval (in seconds). Default is 30 seconds -->
+
+<!-- # Number -->
+
+<!-- # Mandatory -->
+
+<P2498>15</P2498>
+
+<!-- # Local SIP Port. Default is 5062 -->
+
+<!-- # Number -->
+
+<!-- # Mandatory -->
+
+<P413>16021</P413>
+
+
+
+<!-- # SIP Registration Failure Retry Wait Time (in seconds). Default is 20 -->
+
+<!-- # Number: 1 - 3600 -->
+
+<!-- # Mandatory -->
+
+<P471>25</P471>
+
+
+
+<!-- ########################################## -->
+
+<!-- # Account 2/Audio Settings -->
+
+<!-- ########################################## -->
+
+
+<!-- # DTMF Payload Type. Default is 101 -->
+
+<!-- # Number: 96 - 127 -->
+
+<!-- # Mandatory -->
+
+<P496>96</P496>
+
+
+
+<!-- # Preferred Vocoder -->
+
+<!-- # 0 - PCMU, 2 - G.726-32, 4 - G.723.1, 8 - PCMA, 9 - G.722, 18 - G.729A/B, 98 - iLBC -->
+
+<!-- # choice 1. Default is 0 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P451>8</P451> 
+
+
+
+<!-- # choice 2. Default is 8 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P452>8</P452>
+
+
+
+<!-- # choice 3. Default is 18 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P453>8</P453> 
+
+
+
+<!-- # choice 4. Default is 9 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P454>8</P454>
+
+
+
+<!-- # choice 5. Default is 2 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P455>8</P455>
+
+
+
+<!-- # choice 6. Default is 2 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P456>8</P456> -->
+
+
+
+<!-- # choice 7. Default is 2 -->
+
+<!-- # Number: 0, 2, 4, 8, 9, 18, 98 -->
+
+<!-- # Mandatory -->
+
+<P457>18</P457> -->
+
+
+
+<!-- # Voice Frames per TX (up to 10/20/32/64 frames for G711/G726/G723/other codecs respectively). Default is 2 -->
+
+<!-- # Number: 1 - 64 -->
+
+<!-- # Mandatory -->
+
+<P486>2</P486> -->
+
+
+
+
+<!-- ############################################################################## -->
+
+<!-- ##  Settings/General Settings -->
+
+<!-- ############################################################################## -->
+
+<!-- # Use Random Port. 0 - No, 1 - Yes. Default is 0 -->
+
+<!-- # Number: 0, 1 -->
+
+<!-- # Mandatory -->
+
+<P78>1</P78>
+
+
+<!-- ############################################################################## -->
+
+<!-- ##  Maintenance/Upgrade and Provisioning -->
+
+<!-- ############################################################################## -->
+
+
+
+<!-- # Firmware Upgrade and Provisioning -->
+
+<!-- # 0 - Always Check For New Firmware -->
+
+<!-- # 1 - Check New Firmware only when F/W pre/suffix changes -->
+
+<!-- # 2 - Always Skip the Firmware Check -->
+
+<!-- # Number: 0, 1, 2 -->
+
+<!-- # Mandatory -->
+
+<P238>0</P238>
+
+
+
+<!-- # Automatic Upgrade.  -->
+
+<!-- # 0 - No,  -->
+
+<!-- # 1 - Yes, check for upgrade based on minute(s) setting, -->
+
+<!-- # 2 - Yes, check for upgrade based on Hour of Day setting, -->
+
+<!-- # 3 - Yes, check for upgrade based on Day of Week setting, -->
+
+<!-- # Default is No. -->
+
+<!-- # Number: 0, 1, 2, 3 -->
+
+<!-- # Mandatory -->
+
+<P194>1</P194>
+
+
+<!-- # Check for new firmware every () minutes. Default is 7 days. -->
+<!-- # Number: 60-86400 -->
+<!-- # Mandatory -->
+<P193>60</P193>
+
+
+<!-- # Download Configuration File -->
+
+<!-- # Config Upgrade Via. 0 - TFTP Upgrade,  1 - HTTP Upgrade, 2 - HTTPS Upgrade. Default is 1 -->
+
+<!-- # Number: 0, 1, 2 -->
+
+<!-- # Mandatory -->
+
+<P212>0</P212>
+
+
+
+<!-- # Config Server Path -->
+
+<!-- # String -->
+
+<P237>10.20.31.10</P237>
+
+
+<!-- # Download Firmware File -->
+
+<!-- # Firmware Upgrade Via. 0 - TFTP Upgrade,  1 - HTTP Upgrade, 2 - HTTPS Upgrade. Default is 1 -->
+
+<!-- # Number: 0, 1, 2 -->
+
+<!-- # Mandatory -->
+
+<P6767>0</P6767>
+
+
+
+<!-- # Firmware Server Path -->
+
+<!-- # String -->
+
+<P192>10.20.31.10</P192>
+
+<P64>MSK-3</P64>
+
+<P2>J36gYwWq</P2>
+
+<P30>10.20.31.254</P30>
+
+<P102>2</P102>
+
+<P122>1</P122>
+
+<P285>22</P285>
+
+<P47>onelya.mangosip.ru</P47>
+
+<P402>onelya.mangosip.ru</P402>
+
+
+  </config>
+</gs_provision>
